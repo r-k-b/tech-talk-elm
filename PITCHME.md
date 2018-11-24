@@ -22,9 +22,9 @@ Not like Haskell! You won't see arcane runes that are painful to search for
 
 They're flexible and powerful, yes.
 
-_Too flexible.__
+_Too flexible._
 
-_Too powerful.__
+_Too powerful._
 
 +++
 
