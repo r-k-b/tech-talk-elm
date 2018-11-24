@@ -20,11 +20,15 @@ Not like Haskell! You won't see arcane runes that are painful to search for
 
 +++
 
-They're flexible and powerful, yes.
+They're flexible and powerful.
 
-_Too flexible._
+Who doesn't want a flexible and powerful language?
 
-_Too powerful._
++++
+
+_Too_ flexible.
+
+_Too_ powerful.
 
 +++
 
@@ -33,6 +37,8 @@ var result = Rooms.GetBoardingAllocations(people, allocations);
 ```
 
 Does it mutate its arguments?
+
+Does it mutate _something else_?
 
 Does it call external services?
 
@@ -46,7 +52,9 @@ __Does it only "Get"?__
 
 +++
 
-We can't tell except by reading __and understanding__ the code, including everything it calls.
+## We can't tell from here.
+
+Except by reading __and understanding__ the code, including everything it calls.
 
 ---
 
