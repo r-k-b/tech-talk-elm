@@ -16,7 +16,7 @@ Not like Haskell! You won't see arcane runes that are painful to search for
 
 ---
 
-# What's wrong with C-style languages?
+## What's wrong with C-style languages?
 
 +++
 
