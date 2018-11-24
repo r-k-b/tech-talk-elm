@@ -24,7 +24,9 @@ start with the View and work downwards
 
 start with the Model and work upwards
 
----
+---?code=src/sample1.elm&lang=elm
+
++++
 
 # It seems a little verbose?
 
