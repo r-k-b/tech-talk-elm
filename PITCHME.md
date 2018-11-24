@@ -12,6 +12,10 @@ Not like Haskell! You won't see arcane runes that are painful to search for
 
 ---
 
+## no $Digest cycle
+
+---
+
 # Do we...
 
 start with the View and work downwards
