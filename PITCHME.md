@@ -56,6 +56,44 @@ __Does it only "Get"?__
 
 Except by reading __and understanding__ the code, including everything it calls.
 
++++
+
+## So what, that's just how it is.
+
+It doesn't have to be!
+
+---
+
+## What about Typescript?
+
++++
+
+TypeScript is great, and makes JavaScript bearable.
+
+But, it doesn't protect anything at runtime.
+
++++
+
+```typescript
+interface Person {
+    name: String
+    age: Number
+} 
+
+function fetchPeople(): Promise<Person[]> {
+    // ... call to external service ...
+}
+
+const peeps = await fetchPeople();
+```
+
+@[7](Has the external service changed what it returns?)
+
+Note:
+
+(TypeScript 3 introduces the `unknown` type which _can_ alleviate the runtime thing, but 
+only if everyone remembers to use it and makes the effort to!)
+
 ---
 
 ## Do we...
@@ -79,3 +117,8 @@ start with the Model and work upwards
 Yes! Elm steers away from \[implicit|magic\], towards \[explicit|obvious\]
 
 In an unfamiliar codebase, this is helpful!
+
+---
+
+## Making impossible states impossible
+
