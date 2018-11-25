@@ -112,7 +112,8 @@ console.log(`Dude's name is ${duder.name}`)
 
 
 function doSomethingThatNeedsAPerson(p: Person): void {
-    // ... explode with byzantine error, maybe straight away, maybe later ...
+    // ... explode with byzantine error ...
+    // ... maybe straight away, maybe later ...
 }
 ```
 
