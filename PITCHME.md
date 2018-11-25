@@ -94,6 +94,30 @@ Note:
 (TypeScript 3 introduces the `unknown` type which _can_ alleviate the runtime thing, but 
 only if everyone remembers to use it and makes the effort to!)
 
+
++++
+
+## ☣ type casting ☣
+
+```typescript
+function fetchPerson(id: number): Person | null {
+    // ... call to external service ...
+}
+
+// This call will always produce the result I expect
+const duder = fetchPeople(42) as Person;
+
+send
+console.log(`Dude's name is ${duder.name}`)
+
+
+function doSomethingThatNeedsAPerson(p: Person): void {
+    // ... explode with byzantine error, maybe straight away, maybe later ...
+}
+```
+
+@[5-6](O RLY?)
+
 ---
 
 ## Do we...
