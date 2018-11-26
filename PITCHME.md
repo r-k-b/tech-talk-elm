@@ -1,18 +1,139 @@
 ## What is this thing? Why do I care?
 
-+++
+---
 
-## ☠ complexity ☠
+Have you ever gotten elbow deep into a codebase...
 
-Note:
-
-Where OO
-
-Not like Haskell! You won't see arcane runes that are painful to search for
+...and _not_ regretted it?
 
 ---
 
-## no $Digest cycle
+## ☠ accidental¹ complexity ☠
+
+- Costs time
+- Costs features
+- Costs sanity
+
+Footnote : ¹ as opposed to essential complexity
+
++++
+
+It's hard to avoid.
+
+Almost inevitable in large projects.
+
++++
+
+We can buckle down, use grit and discipline to fight against it.
+
++++
+
+But how often do we win when we go against human nature?
+
++++
+
+Elm steers us away from the quick fixes, asks us to think about the
+repercussions of the code we write.
+
+---
+
+
+
+
++++
+
+Code quality is almost automatic in Elm
+
+(elm-format)
+
+---
+
+Packages are encouraged to have useful names
+
+---
+
+JS encourages many modules
+
+Elm suggests there should be one great package that solves the problems
+
+---
+
+Babel • Webpack • TypeScript • Redux • ...
+
+
+You don't need half a dozen different tools to write Elm
+
+---
+
+Elm encourages us to think up-front about the design
+
+---
+
+Things don't get forgotten
+
+_I'll implement this later_ (i.e., never)
+
+---
+
+You have to really go out of your way to write underhanded tricks
+
+It's a pleasure to read Elm code
+
+---
+
+Tree shaking?
+
+Dead code elimination.
+
+---
+
+Upcoming targets like WebAssembly will be free
+
+---
+
+Entire classes of bugs just don't exist in Elm
+
+---
+
+## Future proof
+
+New hires can get up to speed rapidly, and start fearlessly modifying the code
+
+Compare AngularJS / React / Knockout ― much higher WTFs/minute rate
+
+---
+
+Much harder to inadvertently break non-local code
+(especially if you make impossible states impossible)
+
+---
+
+## It's fast
+
++++
+
+### Fast compiler
+
++++ 
+
+### Fast code
+
++++ 
+
+### Fast delivery
+(small assets)
+
++++
+
+### Fast refactoring
+
++++
+
+### Fast testing
+
+- you don't need so many tests
+
+- you don't have to mock a bazillion things
 
 ---
 
@@ -149,100 +270,13 @@ In an unfamiliar codebase, this is helpful!
 
 ---
 
-## Making impossible states impossible
+## Make impossible states impossible
+
 
 ---
 
-Code quality is almost automatic in Elm
+## What does it look like?
 
-(elm-format)
-
----
-
-Packages are encouraged to have useful names
+Not like Haskell! You won't see arcane runes that are painful to search for
 
 ---
-
-JS encourages many modules
-
-Elm suggests there should be one great package that solves the problems
-
----
-
-Babel • Webpack • TypeScript • Redux • ...
-
-
-You don't need half a dozen different tools to write Elm
-
----
-
-Elm encourages us to think up-front about the design
-
----
-
-Things don't get forgotten
-
-_I'll implement this later_ (i.e., never)
-
----
-
-You have to really go out of your way to write underhanded tricks
-
-It's a pleasure to read Elm code
-
----
-
-Tree shaking?
-
-Dead code elimination.
-
----
-
-Upcoming targets like WebAssembly will be free
-
----
-
-Entire classes of bugs just don't exist in Elm
-
----
-
-## Future proof
-
-New hires can get up to speed rapidly, and start fearlessly modifying the code
-
-Compare AngularJS / React / Knockout ― much higher WTFs/minute rate
-
----
-
-Much harder to inadvertently break non-local code
-(especially if you make impossible states impossible)
-
----
-
-## It's fast
-
-+++
-
-### Fast compiler
-
-+++ 
-
-### Fast code
-
-+++ 
-
-### Fast delivery
-(small assets)
-
-+++
-
-### Fast refactoring
-
-+++
-
-### Fast testing
-
-- you don't need so many tests
-
-- you don't have to mock a bazillion things
-
