@@ -26,9 +26,13 @@ Almost inevitable in large projects.
 
 We can buckle down, use grit and discipline to fight against it.
 
+😠
+
 +++
 
-But how often do we win when we go against human nature?
+But, how often do we win when we go against human nature?
+
+😩
 
 +++
 
@@ -37,24 +41,75 @@ repercussions of the code we write.
 
 ---
 
-
+## Why would my business use Elm?
 
 
 +++
 
 Code quality is almost automatic in Elm
 
-(elm-format)
+Note:
+
+`elm-format`; no back-and-forth bikeshedding
+
++++
+
+Elm encourages us to think up-front about the design
+
++++
+
+Elm brings potentially costly corner cases to our attention early on
+
+Note:
+
+Much cheaper to find & fix defects early on, than in production
+
++++
+
+New hires can get up to speed rapidly, and start fearlessly modifying the code
+
+Note:
+
+Compare AngularJS / React / Knockout ― much higher WTFs/minute rate
 
 ---
+
+## Why would a dev choose Elm?
+
++++
 
 Packages are encouraged to have useful names
 
----
++++
+
+Compare some of the [top packages on npm](https://www.npmjs.com/browse/depended):
+
+- lodash
+- bluebird
+- axios
+- minimist
+- through2
+- inquirer
+- q
+
+With some [from Elm](http://elm-skimmer.com/):
+
+- elm-css
+- elm-plot
+- elm-test
+- elm-sortable-table
+- elm-route-url
+- elm-decode-pipeline
+- elm-graphql
+
+
++++
 
 JS encourages many modules
 
-Elm suggests there should be one great package that solves the problems
+-vs-
+
+Elm says there should be one great package that solves the problems
 
 ---
 
@@ -62,10 +117,6 @@ Babel • Webpack • TypeScript • Redux • ...
 
 
 You don't need half a dozen different tools to write Elm
-
----
-
-Elm encourages us to think up-front about the design
 
 ---
 
@@ -102,10 +153,6 @@ Entire classes of bugs just don't exist in Elm
 ---
 
 ## Future proof
-
-New hires can get up to speed rapidly, and start fearlessly modifying the code
-
-Compare AngularJS / React / Knockout ― much higher WTFs/minute rate
 
 ---
 
