@@ -48,7 +48,7 @@ var result = Rooms.GetBoardingAllocations(people, allocations);
 
 @[1](Does it throw exceptions?)
 
-__Does it only "Get"?__
+@[1](__Does it only "Get"?__)
 
 +++
 
