@@ -8,7 +8,11 @@ Have you ever gotten elbow deep into a codebase...
 
 ---
 
-## ☠ accidental¹ complexity ☠
+☠ ☠ ☠
+
+## accidental¹ complexity
+
+☠ ☠ ☠
 
 - Costs time
 - Costs features
