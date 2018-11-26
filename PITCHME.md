@@ -26,6 +26,10 @@ Who doesn't want a flexible and powerful language?
 
 +++
 
+## 👣 🔫
+
++++
+
 _Too_ flexible.
 
 _Too_ powerful.
