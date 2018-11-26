@@ -81,6 +81,12 @@ It's a pleasure to read Elm code
 
 ---
 
+Programmers using functional languages get paid more, regardless of experience level
+
+https://discourse.elm-lang.org/t/elm-feedback-in-the-state-of-javascript-2018/2560/10?u=rkb
+
+---
+
 Tree shaking?
 
 Dead code elimination.
