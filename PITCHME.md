@@ -36,17 +36,17 @@ _Too_ powerful.
 var result = Rooms.GetBoardingAllocations(people, allocations);
 ```
 
-Does it mutate its arguments?
+@[1](Does it mutate its arguments?)
 
-Does it mutate _something else_?
+@[1](Does it mutate _something else_?)
 
-Does it call external services?
+@[1](Does it call external services?)
 
-What happens if it's called twice? Or more?
+@[1](What happens if it's called twice? Or more?)
 
-How does it handle null or default properties?
+@[1](How does it handle null or default properties?)
 
-Does it throw exceptions?
+@[1](Does it throw exceptions?)
 
 __Does it only "Get"?__
 
