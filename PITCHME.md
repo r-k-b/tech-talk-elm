@@ -46,7 +46,7 @@ repercussions of the code we write.
 ## Why would my business use Elm?
 
 
-+++
+---
 
 Code quality is almost automatic in Elm
 
@@ -54,11 +54,11 @@ Note:
 
 `elm-format`; no back-and-forth bikeshedding
 
-+++
+---
 
 Elm encourages us to think up-front about the design
 
-+++
+---
 
 Elm brings potentially costly corner cases to our attention early on
 
@@ -66,7 +66,7 @@ Note:
 
 Much cheaper to find & fix defects early on, than in production
 
-+++
+---
 
 New hires can get up to speed rapidly, and start fearlessly modifying the code
 
@@ -78,7 +78,7 @@ Compare AngularJS / React / Knockout ― much higher WTFs/minute rate
 
 ## Why would a dev choose Elm?
 
-+++
+---
 
 Packages are encouraged to have useful names
 
@@ -97,7 +97,7 @@ _elm-css elm-plot elm-test elm-sortable-table
 elm-route-url elm-decode-pipeline elm-graphql_
 
 
-+++
+---
 
 JS encourages many modules
 
@@ -114,20 +114,29 @@ You don't need half a dozen different tools to write Elm
 
 ---
 
+_TODO: add code sample here_
+
 Things don't get forgotten
 
-_I'll implement this later_ (i.e., never)
+Note:
+_"I'll implement this later"_ (i.e., never)
 
 ---
-
-You have to really go out of your way to write underhanded tricks
 
 It's a pleasure to read Elm code
 
+Note:
+You have to really go out of your way to write underhanded tricks
+
 ---
 
-Programmers using functional languages get paid more, regardless of experience level
+> Programmers using functional languages get paid more, regardless of experience level
 
+![paid more](https://cdn.sstatic.net/insights/Img/Survey/2018/salary_language-1.svg?v=3f273db9f512)
+
+footnote : https://insights.stackoverflow.com/survey/2018/#work-salary-and-experience-by-language
+
+Note:
 https://discourse.elm-lang.org/t/elm-feedback-in-the-state-of-javascript-2018/2560/10?u=rkb
 
 ---
@@ -327,3 +336,6 @@ In an unfamiliar codebase, this is helpful!
 Not like Haskell! You won't see arcane runes that are painful to search for
 
 ---
+
+We don't need to rely on discipline to avoid complexity-multiplying mutations and side effects
+
