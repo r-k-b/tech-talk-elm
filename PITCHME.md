@@ -17,7 +17,7 @@ Have you ever gotten elbow deep into a codebase...
 - Costs sanity
 
 @snap[south]
-@size[0.6em](_¹ as opposed to essential complexity"_)
+@size[0.6em](_¹ as opposed to essential complexity_)
 @snapend
 
 +++
