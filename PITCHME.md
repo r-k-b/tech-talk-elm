@@ -16,7 +16,7 @@ Have you ever gotten elbow deep into a codebase...
 - Costs features
 - Costs sanity
 
-Footnote : ¹ as opposed to essential complexity
+Footnote : "_¹ as opposed to essential complexity_"
 
 +++
 
