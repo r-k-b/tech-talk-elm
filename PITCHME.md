@@ -86,11 +86,13 @@ Packages are encouraged to have useful names
 
 Compare some of the [top packages on npm](https://www.npmjs.com/browse/depended):
 
-lodash • bluebird • axios • minimist • through2 • inquirer • q
+lodash bluebird axios minimist
+through2 inquirer q
 
 With some [from Elm](http://elm-skimmer.com/):
 
-elm-css • elm-plot • elm-test • elm-sortable-table • elm-route-url • elm-decode-pipeline • elm-graphql
+elm-css elm-plot elm-test elm-sortable-table
+elm-route-url elm-decode-pipeline elm-graphql
 
 
 +++
