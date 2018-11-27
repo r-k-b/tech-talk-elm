@@ -16,7 +16,9 @@ Have you ever gotten elbow deep into a codebase...
 - Costs features
 - Costs sanity
 
-Footnote : "_¹ as opposed to essential complexity_"
+@snap[south]
+@size[0.6em](_¹ as opposed to essential complexity"_)
+@snapend
 
 +++
 
