@@ -8,7 +8,7 @@ Have you ever gotten elbow deep into a codebase...
 
 ---
 
-## accidental¹ complexity
+## accidental complexity¹
 
 ☠ ☠ ☠
 
@@ -17,7 +17,7 @@ Have you ever gotten elbow deep into a codebase...
 - Costs sanity
 
 @snap[south]
-@size[0.6em](_¹ as opposed to essential complexity_)
+@size[0.6em](¹ as opposed to _essential_ complexity)
 @snapend
 
 +++
@@ -28,9 +28,12 @@ Almost inevitable in large projects.
 
 +++
 
-We can buckle down, use grit and discipline to fight against it.
+Discipline!
 
 😠
+
+Note:
+We can buckle down, use grit and discipline to fight against it.
 
 +++
 
@@ -173,6 +176,27 @@ Entire classes of bugs just don't exist in Elm
 
 Much harder to inadvertently break non-local code
 (especially if you make impossible states impossible)
+
++++
+
+```c#
+public class Startup
+{
+    // ...
+
+    public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+    {
+        /// ...
+
+        app.UseStaticFiles();
+        app.UseSpaStaticFiles();
+
+        // ...
+    }
+}
+```
+
+@[10](What the heck does this do? What changes if it present, or missing?)
 
 ---
 
