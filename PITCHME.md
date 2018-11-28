@@ -105,6 +105,19 @@ through to the last time it's worked on.
 
 ---
 
+It's a pleasure to read Elm code
+
+Note:
+You have to really go out of your way to write underhanded tricks
+
+It's even helped developers with ADHD
+
++++
+
+![Video](https://www.youtube.com/embed/wpYFTG-uViE)
+
+---
+
 Packages are encouraged to have useful names
 
 +++
@@ -142,13 +155,6 @@ You don't need half a dozen different tools to write Elm
 Babel • Webpack • TypeScript • Redux
 Redux-Loop • Redux-Saga • Create-React-App
 ...etc...
-
----
-
-It's a pleasure to read Elm code
-
-Note:
-You have to really go out of your way to write underhanded tricks
 
 ---
 
