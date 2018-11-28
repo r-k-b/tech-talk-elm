@@ -38,6 +38,10 @@ But, how often do we win when we go against human nature?
 
 😩
 
+Note:
+Especially when it's so easy to do the hacky thing, or
+introduce some magic that makes sense at the time.
+
 +++
 
 Elm steers us away from the quick fixes, asks us to think about the
@@ -47,25 +51,26 @@ repercussions of the code we write.
 
 ## Why would my business use Elm?
 
-
 ---
 
 Code quality is almost automatic in Elm
 
 Note:
-
-`elm-format`; no back-and-forth bikeshedding
+`elm-format` means less back-and-forth bikeshedding
 
 ---
 
 Elm encourages us to think up-front about the design
+
+Note:
+It's common to start with the model and work our way up to the 
+view, rather than starting with the view and working backwards.
 
 ---
 
 Elm brings potentially costly corner cases to our attention early on
 
 Note:
-
 Much cheaper to find & fix defects early on, than in production
 
 ---
@@ -73,8 +78,11 @@ Much cheaper to find & fix defects early on, than in production
 New hires can get up to speed rapidly, and start fearlessly modifying the code
 
 Note:
+Compare AngularJS / React / Knockout / etc:
 
-Compare AngularJS / React / Knockout ― much higher WTFs/minute rate
+― much higher WTFs/minute rate
+- Need discipline to avoid 'magic' / obtuse code
+- TypeScript helps, but still leaves many choices up to individuals
 
 ---
 
