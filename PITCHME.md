@@ -2,7 +2,7 @@
 
 ---
 
-Have you ever gotten elbow deep into a codebase...
+Have you ever gotten elbow deep into a big codebase...
 
 ...and _not_ regretted it?
 
@@ -73,7 +73,7 @@ New hires can get up to speed rapidly, and start fearlessly modifying the code
 Note:
 Compare AngularJS / React / Knockout / etc:
 
-― much higher WTFs/minute rate
+- much higher WTFs/minute rate
 - Need discipline to avoid 'magic' / obtuse code
 - TypeScript helps, but still leaves many choices up to individuals
 
@@ -94,6 +94,14 @@ Note:
 ---
 
 ## Why would a dev choose Elm?
+
+---
+
+Simplicity from start to end
+
+Note:
+Elm is helpful, from the day you start a project
+through to the last time it's worked on.
 
 ---
 
@@ -119,7 +127,7 @@ Choice paralysis
 
 +++
 
-JS encourages many modules
+JS encourages many packages
 
 -vs-
 
@@ -134,15 +142,6 @@ You don't need half a dozen different tools to write Elm
 Babel • Webpack • TypeScript • Redux
 Redux-Loop • Redux-Saga • Create-React-App
 ...etc...
-
----
-
-_TODO: add code sample here_
-
-Things don't get forgotten
-
-Note:
-_"I'll implement this later"_ (i.e., never)
 
 ---
 
@@ -170,6 +169,12 @@ Tree shaking?
 
 Dead code elimination.
 
+Note: tree shaking is risky in js and typescript; it relies
+on assumptions that don't always hold. 
+when there are problems with it, they might only 
+manifest in production mode.
+
+
 ---
 
 Upcoming targets like WebAssembly will be free
@@ -177,6 +182,9 @@ Upcoming targets like WebAssembly will be free
 ---
 
 Entire classes of bugs just don't exist in Elm
+
+Note:
+mutations, _, ...
 
 ---
 
