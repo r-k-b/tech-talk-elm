@@ -28,6 +28,10 @@ Almost inevitable in large projects.
 
 +++
 
+Or is it?
+
++++
+
 Discipline!
 
 😠
@@ -56,25 +60,11 @@ repercussions of the code we write.
 
 ---
 
-Code quality is almost automatic in Elm
-
-Note:
-`elm-format` means less back-and-forth bikeshedding
-
----
-
 Elm encourages us to think up-front about the design
 
 Note:
 It's common to start with the model and work our way up to the 
 view, rather than starting with the view and working backwards.
-
----
-
-Elm brings potentially costly corner cases to our attention early on
-
-Note:
-Much cheaper to find & fix defects early on, than in production
 
 ---
 
@@ -86,6 +76,20 @@ Compare AngularJS / React / Knockout / etc:
 ― much higher WTFs/minute rate
 - Need discipline to avoid 'magic' / obtuse code
 - TypeScript helps, but still leaves many choices up to individuals
+
+---
+
+Elm brings potentially costly corner cases to our attention early on
+
+Note:
+Much cheaper to find & fix defects early on, than in production
+
+---
+
+Code quality is almost automatic in Elm
+
+Note:
+`elm-format` means less back-and-forth bikeshedding
 
 ---
 
@@ -109,21 +113,27 @@ With some [from Elm](http://elm-skimmer.com/):
 _elm-css elm-plot elm-test elm-sortable-table
 elm-route-url elm-decode-pipeline elm-graphql_
 
-
 ---
+
+Choice paralysis
+
++++
 
 JS encourages many modules
 
 -vs-
 
-Elm says there should be one great package that solves the problems
+Elm says there should be one great package that solves the problem
 
 ---
 
-Babel • Webpack • TypeScript • Redux • ...
-
-
 You don't need half a dozen different tools to write Elm
+
++++
+
+Babel • Webpack • TypeScript • Redux
+Redux-Loop • Redux-Saga • Create-React-App
+...etc...
 
 ---
 
