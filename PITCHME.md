@@ -93,7 +93,51 @@ Note:
 
 ---
 
+We can make impossible states **impossible**
+
+Note:
+Richard Feldman has a great video on this! The gist of it is that
+if you pick the right model to represent the application, it becomes
+impossible to ever get into states that shouldn't be possible. 
+
++++
+
+![Video](https://www.youtube.com/embed/IcgmSRJHu_8)
+
+
+---
+
 ## Why would a dev choose Elm?
+
+---
+
+Elm's type system is very safe
+
++++
+
+## There are no runtime errors
+
+Note:
+In languages with exceptions, all functions have an extra, hidden return type.
+
+Throw / Catch are basically a `GOTO` statement. How 
+
++++
+
+## There are no null values
+
+Note:
+The "billion dollar mistake" ― when we use a type in Elm, we know 
+__unconditionally__ that we have that type, and not a `null` value.
+
+TypeScript allows us to pretend we have that safety - but it's built
+in sand - TypeScript cannot protect you at runtime.
+
++++
+
+## Control statements are forced to deal with all possibilities
+
+
 
 ---
 
@@ -108,6 +152,8 @@ through to the last time it's worked on.
 It's a pleasure to read Elm code
 
 Note:
+We don't need to rely on discipline to avoid complexity-multiplying mutations and side effects
+
 You have to really go out of your way to write underhanded tricks
 
 It's even helped developers with ADHD
@@ -115,46 +161,6 @@ It's even helped developers with ADHD
 +++
 
 ![Video](https://www.youtube.com/embed/wpYFTG-uViE)
-
----
-
-Packages are encouraged to have useful names
-
-+++
-
-Compare some of the [top packages on npm](https://www.npmjs.com/browse/depended):
-
-_lodash bluebird axios minimist
-through2 inquirer q_
-
- 
-
-With some [from Elm](http://elm-skimmer.com/):
-
-_elm-css elm-plot elm-test elm-sortable-table
-elm-route-url elm-decode-pipeline elm-graphql_
-
----
-
-Choice paralysis
-
-+++
-
-JS encourages many packages
-
--vs-
-
-Elm says there should be one great package that solves the problem
-
----
-
-You don't need half a dozen different tools to write Elm
-
-+++
-
-Babel • Webpack • TypeScript • Redux
-Redux-Loop • Redux-Saga • Create-React-App
-...etc...
 
 ---
 
@@ -171,15 +177,11 @@ https://discourse.elm-lang.org/t/elm-feedback-in-the-state-of-javascript-2018/25
 
 ---
 
-Tree shaking?
+## Short feedback loop
 
-Dead code elimination.
++++
 
-Note: tree shaking is risky in js and typescript; it relies
-on assumptions that don't always hold. 
-when there are problems with it, they might only 
-manifest in production mode.
-
+↱  think → type → compile → test  ↲ 
 
 ---
 
@@ -190,16 +192,15 @@ Upcoming targets like WebAssembly will be free
 Entire classes of bugs just don't exist in Elm
 
 Note:
-mutations, _, ...
-
----
-
-## Future proof
+mutations, unexpected `null`s, etc...
 
 ---
 
 Much harder to inadvertently break non-local code
 (especially if you make impossible states impossible)
+
+Note:
+
 
 +++
 
@@ -253,6 +254,58 @@ public class Startup
 
 ---
 
+You don't need half a dozen different tools to write Elm
+
++++
+
+Babel • Webpack • TypeScript • Redux
+Redux-Loop • Redux-Saga • Create-React-App
+...etc...
+
+---
+
+Packages are encouraged to have useful names
+
++++
+
+Compare some of the [top packages on npm](https://www.npmjs.com/browse/depended):
+
+_lodash bluebird axios minimist
+through2 inquirer q_
+
+ 
+
+With some [from Elm](http://elm-skimmer.com/):
+
+_elm-css elm-plot elm-test elm-sortable-table
+elm-route-url elm-decode-pipeline elm-graphql_
+
+---
+
+Choice paralysis
+
++++
+
+JS encourages many packages
+
+-vs-
+
+Elm says there should be one great package that solves the problem
+
+---
+
+Tree shaking?
+
+Dead code elimination.
+
+Note: tree shaking is risky in js and typescript; it relies
+on assumptions that don't always hold. 
+when there are problems with it, they might only 
+manifest in production mode.
+
+
+---
+
 ## What's wrong with C-style languages?
 
 +++
@@ -302,6 +355,16 @@ Except by reading __and understanding__ the code, including everything it calls.
 ## So what, that's just how it is.
 
 It doesn't have to be!
+
+---
+
+LMW examples
+
+Note:
+<https://lmw.demo.envoyat.com/about-lmw/our-people/>
+<https://www.lmw.com.au/about-lmw/our-people/>
+<https://lmw.demo.envoyat.com/request-a-quote/>
+<https://www.lmw.com.au/request-a-quote/>
 
 ---
 
@@ -383,19 +446,3 @@ start with the Model and work upwards
 Yes! Elm steers away from \[implicit|magic\], towards \[explicit|obvious\]
 
 In an unfamiliar codebase, this is helpful!
-
----
-
-## Make impossible states impossible
-
-
----
-
-## What does it look like?
-
-Not like Haskell! You won't see arcane runes that are painful to search for
-
----
-
-We don't need to rely on discipline to avoid complexity-multiplying mutations and side effects
-
