@@ -142,6 +142,8 @@ You have to really go out of your way to write underhanded tricks
 
 > Programmers using functional languages get paid more, regardless of experience level
 
++++
+
 ![paid more](https://cdn.sstatic.net/insights/Img/Survey/2018/salary_language-1.svg?v=3f273db9f512)
 
 footnote : https://insights.stackoverflow.com/survey/2018/#work-salary-and-experience-by-language
