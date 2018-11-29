@@ -204,7 +204,7 @@ We don't need to rely on discipline to avoid complexity-multiplying mutations an
 
 You have to really go out of your way to write underhanded tricks
 
-It's even helped developers with ADHD
+It's even helped developers with ADHD, like Luke Westby
 
 +++
 
