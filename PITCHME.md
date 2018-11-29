@@ -103,7 +103,11 @@ We can make impossible states **impossible**
 Note:
 Richard Feldman has a great video on this! The gist of it is that
 if you pick the right model to represent the application, it becomes
-impossible to ever get into states that shouldn't be possible. 
+impossible to ever get into states that shouldn't be possible.
+
+When you can't compile code that could produce bugs, then you save
+time having to test for the bugs, and possibly having to fix them
+after they've got into production.  
 
 +++
 
@@ -117,6 +121,9 @@ impossible to ever get into states that shouldn't be possible.
 ---
 
 Elm's type system is very safe
+
+Note:
+Almost every other language's type system makes me miss Elm 
 
 +++
 
