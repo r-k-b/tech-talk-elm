@@ -120,7 +120,8 @@ Elm's type system is very safe
 
 +++
 
-## There are no runtime errors
+## There are no
+## runtime errors
 
 Note:
 In languages with exceptions, all functions have an extra, hidden return type.
@@ -129,7 +130,8 @@ Throw / Catch are basically a `GOTO` statement. How
 
 +++
 
-## There are no null values
+## There are no
+## null values
 
 Note:
 The "billion dollar mistake" ― when we use a type in Elm, we know 
