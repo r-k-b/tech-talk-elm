@@ -147,6 +147,11 @@ Control statements are forced to deal with all possibilities
 +++
 
 ```elm
+type Msg
+    = Increment
+    | Decrement
+
+
 update : Msg -> Model -> Model
 update msg model =
     case msg of
