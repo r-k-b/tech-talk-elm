@@ -246,7 +246,12 @@ Much harder to inadvertently break non-local code
 (especially if you make impossible states impossible)
 
 Note:
+There's no `void` return type; **everything** has to
+return a value. 
 
+If a return value isn't used, you (and the compiler)
+know that it absolutely has no effect, and can be
+safely ignored.
 
 +++
 
@@ -276,6 +281,7 @@ public class Startup
 +++
 
 ### Fast compiler
+
 
 +++ 
 
