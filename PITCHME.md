@@ -36,6 +36,12 @@ Discipline!
 
 😠
 
++++
+
+Just don't write bad code!
+
+😠
+
 Note:
 We can buckle down, use grit and discipline to fight against it.
 
@@ -113,6 +119,20 @@ after they've got into production.
 
 ![Video](https://www.youtube.com/embed/IcgmSRJHu_8)
 
+---
+
+## Short feedback loop
+
++++
+
+↱   think → type → compile → test   ↲ 
+
+Note:
+Elm catches more problems at the compile step, so
+humans don't need to test every condition on
+every change.
+
+Faster feedback means faster projects
 
 ---
 
@@ -133,7 +153,7 @@ Almost every other language's type system makes me miss Elm
 Note:
 In languages with exceptions, all functions have an extra, hidden return type.
 
-Throw / Catch are basically a `GOTO` statement. How 
+Throw / Catch are basically a `GOTO` statement. 
 
 +++
 
@@ -195,6 +215,20 @@ Note:
 Elm is helpful, from the day you start a project
 through to the last time it's worked on.
 
++++?code=src/sample1.elm&lang=elm
+
+@[8](These are __the__ only things that can change our Model)
+
+@[10-17](Here's __exactly__ what happens when we get one of those messages)
+
++++
+
+## It seems a little verbose?
+
+Yes! Elm steers away from \[implicit|magic\], towards \[explicit|obvious\]
+
+In an unfamiliar codebase, this is helpful!
+
 ---
 
 It's a pleasure to read Elm code
@@ -222,19 +256,6 @@ footnote : https://insights.stackoverflow.com/survey/2018/#work-salary-and-exper
 
 Note:
 https://discourse.elm-lang.org/t/elm-feedback-in-the-state-of-javascript-2018/2560/10?u=rkb
-
----
-
-## Short feedback loop
-
-+++
-
-↱   think → type → compile → test   ↲ 
-
-Note:
-Elm catches more problems at the compile step, so
-humans don't need to test every condition on
-every change.
 
 ---
 
@@ -349,16 +370,82 @@ elm-route-url elm-decode-pipeline elm-graphql_
 
 ---
 
-Tree shaking?
-
-Dead code elimination.
+Delivering only the code we need
 
 Note: 
+Tree shaking is the best you can do with JS / TS.
+
+Elm uses dead code elimination, and it's absolutely reliable.
+
 tree shaking is risky in js and typescript; it relies
 on assumptions that don't always hold. 
 when there are problems with it, they might only 
 manifest in production mode.
 
+---
+
+## What about Typescript?
+
++++
+
+TypeScript is great, and makes JavaScript bearable.
+
+But, it doesn't protect anything at runtime.
+
++++
+
+```typescript
+interface Person {
+    name: String
+    age: Number
+} 
+
+function fetchPeople(): Promise<Person[]> {
+    // ... call to external service ...
+}
+
+const peeps = await fetchPeople();
+```
+
+@[7](Has the external service changed what it returns?)
+
+Note:
+
+(TypeScript 3 introduces the `unknown` type which _can_ alleviate the runtime thing, but 
+only if everyone remembers to use it and makes the effort to!)
+
+
++++
+
+## ☣ type casting ☣
+
+```typescript
+function fetchPerson(id: number): Person | null {
+    // ... call to external service ...
+}
+
+// This call will always produce the result I expect
+const duder = fetchPeople(42) as Person;
+
+function doSomethingThatNeedsAPerson(p: Person): void {
+    // ... explode with byzantine error ...
+    // ... maybe straight away, maybe later ...
+}
+```
+
+@[5-6](O RLY?)
+
+---
+
+## examples
+
+lmw
+
+Note:
+<https://lmw.demo.envoyat.com/about-lmw/our-people/>
+<https://www.lmw.com.au/about-lmw/our-people/>
+<https://lmw.demo.envoyat.com/request-a-quote/>
+<https://www.lmw.com.au/request-a-quote/>
 
 ---
 
@@ -412,93 +499,5 @@ Except by reading __and understanding__ the code, including everything it calls.
 
 It doesn't have to be!
 
----
-
-LMW examples
-
 Note:
-<https://lmw.demo.envoyat.com/about-lmw/our-people/>
-<https://www.lmw.com.au/about-lmw/our-people/>
-<https://lmw.demo.envoyat.com/request-a-quote/>
-<https://www.lmw.com.au/request-a-quote/>
-
----
-
-## What about Typescript?
-
-+++
-
-TypeScript is great, and makes JavaScript bearable.
-
-But, it doesn't protect anything at runtime.
-
-+++
-
-```typescript
-interface Person {
-    name: String
-    age: Number
-} 
-
-function fetchPeople(): Promise<Person[]> {
-    // ... call to external service ...
-}
-
-const peeps = await fetchPeople();
-```
-
-@[7](Has the external service changed what it returns?)
-
-Note:
-
-(TypeScript 3 introduces the `unknown` type which _can_ alleviate the runtime thing, but 
-only if everyone remembers to use it and makes the effort to!)
-
-
-+++
-
-## ☣ type casting ☣
-
-```typescript
-function fetchPerson(id: number): Person | null {
-    // ... call to external service ...
-}
-
-// This call will always produce the result I expect
-const duder = fetchPeople(42) as Person;
-
-send
-console.log(`Dude's name is ${duder.name}`)
-
-
-function doSomethingThatNeedsAPerson(p: Person): void {
-    // ... explode with byzantine error ...
-    // ... maybe straight away, maybe later ...
-}
-```
-
-@[5-6](O RLY?)
-
----
-
-## Do we...
-
-start with the View and work downwards
-
--or-
-
-start with the Model and work upwards
-
----?code=src/sample1.elm&lang=elm
-
-@[8](These are __the__ only things that can change our Model)
-
-@[10-17](Here's __exactly__ what happens when we get one of those messages)
-
-+++
-
-## It seems a little verbose?
-
-Yes! Elm steers away from \[implicit|magic\], towards \[explicit|obvious\]
-
-In an unfamiliar codebase, this is helpful!
+Thank you.
