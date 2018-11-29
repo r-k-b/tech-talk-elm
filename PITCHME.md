@@ -280,26 +280,34 @@ public class Startup
 
 +++
 
-### Fast compiler
+### Fast
+### compiler
 
 
 +++ 
 
-### Fast code
+### Fast
+### code
 
 +++ 
 
-### Fast delivery
-(small assets)
+### Fast
+### delivery
+
+Note:
+small assets
 
 +++
 
-### Fast refactoring
+### Fast
+### refactoring
 
 +++
 
-### Fast testing
+### Fast
+### testing
 
+Note:
 - you don't need so many tests
 
 - you don't have to mock a bazillion things
@@ -334,23 +342,12 @@ elm-route-url elm-decode-pipeline elm-graphql_
 
 ---
 
-Choice paralysis
-
-+++
-
-JS encourages many packages
-
--vs-
-
-Elm says there should be one great package that solves the problem
-
----
-
 Tree shaking?
 
 Dead code elimination.
 
-Note: tree shaking is risky in js and typescript; it relies
+Note: 
+tree shaking is risky in js and typescript; it relies
 on assumptions that don't always hold. 
 when there are problems with it, they might only 
 manifest in production mode.
