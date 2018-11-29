@@ -222,7 +222,7 @@ https://discourse.elm-lang.org/t/elm-feedback-in-the-state-of-javascript-2018/25
 
 +++
 
-↱  think → type → compile → test  ↲ 
+↱   think → type → compile → test   ↲ 
 
 ---
 
