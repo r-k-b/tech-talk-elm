@@ -140,8 +140,37 @@ in sand - TypeScript cannot protect you at runtime.
 
 +++
 
-## Control statements are forced to deal with all possibilities
+Control statements are forced to deal with all possibilities
 
++++
+
+```elm
+update : Msg -> Model -> Model
+update msg model =
+    case msg of
+        Increment ->
+            { model | count = model.count + 1 }
+```
+
++++
+
+```
+This `case` does not have branches for all possibilities:
+
+24|>    case msg of
+25|>        Increment ->
+26|>            { model | count = model.count + 1 }
+
+Missing possibilities include:
+
+    Decrement
+
+I would have to crash if I saw one of those. Add branches for them!
+
+Hint: If you want to write the code for each branch later, use `Debug.todo` as a
+placeholder. Read <https://elm-lang.org/0.19.0/missing-patterns> for more
+guidance on this workflow.
+```
 
 
 ---
