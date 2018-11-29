@@ -224,6 +224,11 @@ https://discourse.elm-lang.org/t/elm-feedback-in-the-state-of-javascript-2018/25
 
 ↱   think → type → compile → test   ↲ 
 
+Note:
+Elm catches more problems at the compile step, so
+humans don't need to test every condition on
+every change.
+
 ---
 
 Upcoming targets like WebAssembly will be free
