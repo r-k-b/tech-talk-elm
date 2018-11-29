@@ -66,6 +66,9 @@ Note:
 It's common to start with the model and work our way up to the 
 view, rather than starting with the view and working backwards.
 
+When we think like that, architectural problems get caught early,
+and are much cheaper to fix. 
+
 ---
 
 New hires can get up to speed rapidly, and start fearlessly modifying the code
@@ -90,6 +93,8 @@ Code quality is almost automatic in Elm
 
 Note:
 `elm-format` means less back-and-forth bikeshedding
+
+and almost all the Elm code in existence is formatted consistently
 
 ---
 
